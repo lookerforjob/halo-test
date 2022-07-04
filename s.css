@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&family=Sen:wght@400;700;800&display=swap");
+
+:root {
+  --sedwick: "Sedgwick Ave", cursive;
+  --sen: "Sen", sans-serif;
+}
+
+/*common styles*/
+.btn--b {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  padding: 0.4rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-family: var(--sen);
+  background-color: #000000;
+  color: #f7c528;
+  border: none;
+  transition: ease 0.5s;
+  margin-right: 1rem;
+}
+
+.btn--b:hover {
+  transform: scale(1.1);
+}
+
+.btn--y {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  padding: 0.4rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-family: var(--sen);
+  background-color: #f7c528;
+  color: #000;
+  border: none;
+  transition: all 0.5s;
+  transition-timing-function: ease;
+  margin-right: 1rem;
+}
+
+.btn--y:hover {
+  transform: scale(1.2);
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.title-wf {
+  font-size: 3.7rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.493);
+  color: rgba(0, 0, 0, 0);
+  font-family: var(--sen);
+  padding-left: 7rem;
+  padding-top: 1.5rem;
+  letter-spacing: 25px;
+}
+.grey {
+  background-image: url(Mask.bg.webp);
+}
+
+.black {
+  background-color: #000;
+}
+
+.yellow {
+  background-color: #f7c528;
+}
+
+#left {
+  text-align: end;
+}
+
+#center {
+  text-align: center;
+}
+
+/*End Common Style*/
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffbc0e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/*Nav css style*/
+
+nav ul a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: var(--sen);
+  font-weight: 800;
+  transition: 0.5s;
+  padding-right: 10px;
+}
+
+nav ul a:hover {
+  transform: scale(1.15);
+}
+
+#logo {
+  height: 100px;
+}
+
+.logo {
+  filter: brightness(0);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background: #f6c82a;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+/*End Nav style*/
+
+/*hero seccion CSS*/
+hero {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  background: #f7c528;
+  background-image: url(hero\ bg.webp);
+  background-repeat: no-repeat;
+  background-position: 550px 10px;
+}
+
+hero .title {
+  grid-column: 1;
+  margin-top: 22rem;
+  margin-left: 7rem;
+}
+
+.hero__subtitle {
+  font-size: 1.3rem;
+  margin-bottom: -3rem;
+  font-family: var(--sedwick);
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-family: var(--sen);
+  line-height: 3rem;
+  margin-bottom: -0.1rem;
+  font-weight: 800;
+}
+
+.social-menu {
+  position: sticky;
+  grid-column: 2;
+}
+
+.social-menu a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.social-menu a:hover {
+  color: white;
+}
+
+.social-menu ul li {
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.7s ease 0s;
+}
+
+.social-menu ul li:hover {
+  transform: scale(1.03);
+}
+
+.arrow a {
+  display: inline;
+  color: #000;
+  position: relative;
+  font-size: 2.5rem;
+  padding-right: 80px;
+}
+
+/*End Hero style*/
+
+/*Releases css style*/
+
+.releases {
+  padding-bottom: 1rem;
+}
+
+.releases__grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: minmax(40px, 1fr);
+  margin-left: 15%;
+  margin-right: 15%;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.releases__grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-grid-col-2 {
+  grid-column: span 2;
+}
+
+.img-grid-row-2 {
+  grid-row: span 2;
+}
+/*End Releases style*/
+
+/*Suscribe css style*/
+.suscribe {
+  color: white;
+  padding-bottom: 1rem;
+}
+/*Footer css style*/
+footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: auto;
+}
+
+footer ul a li {
+  font-size: 15px;
+  color: #f7c528;
+  list-style: none;
+  font-family: var(--sen);
+  font-weight: 800;
+}
+
+footer ul a li:hover {
+  color: white;
+}
+
+footer ul a {
+  display: inline-block;
+  padding: 5px 20px;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}

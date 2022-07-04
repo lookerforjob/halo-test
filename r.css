@@ -1,0 +1,150 @@
+/*Nav responsive*/
+@media (max-width: 900px) {
+  /*nav responsive*/
+  #btn-mobile {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    right: 0px;
+    background: #f7c528;
+    z-index: 1000;
+    height: calc(100vh-70px);
+  }
+
+  #nav.active #menu {
+    display: block;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0px 1rem;
+    border-bottom: 2px solid #b78d00;
+    transition: ease 0.5s;
+  }
+
+  #menu a:hover {
+    transform: scale(1.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #hamburger {
+    color: rgb(0, 0, 0);
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #hamburger.active {
+    display: none;
+  }
+
+  /*nav responsive end*/
+
+  hero {
+    background-image: none;
+  }
+
+  hero .title {
+    grid-column: 1;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .social-menu ul li {
+    display: inline-block;
+    padding: 5px;
+  }
+}
+
+/*Releases responsive*/
+@media screen and (max-width: 750px) {
+  .releases__grid {
+    --num-cols: 2;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title-wf {
+    font-size: 3.7rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.493);
+    color: rgba(0, 0, 0, 0);
+    font-family: var(--sen);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+  }
+  .btn--b {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+    margin-right: 1rem;
+  }
+
+  .btn--y {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+    margin-right: 1rem;
+  }
+
+  .left {
+    margin-left: 0;
+  }
+
+  footer {
+    height: auto;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .releases__grid {
+    --num-cols: 2;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title-wf {
+    font-size: 2.7rem;
+  }
+
+  .btn--b {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+  }
+
+  .btn--y {
+    font-size: 1rem;
+    padding: 7.5px 30px;
+  }
+
+  footer {
+    height: auto;
+    text-align: center;
+    line-height: 2rem;
+  }
+}
