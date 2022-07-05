@@ -91,11 +91,32 @@ h2 {
 
 /*End Common Style*/
 
+/*Button Go up Style*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 8vh;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#myBtn:hover {
+  transform: scale(0.8);
+}
+/*Button Go up end*/
+
+/*Body section*/
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -262,6 +283,138 @@ hero .title {
   grid-row: span 2;
 }
 /*End Releases style*/
+
+/*Start Tour Style*/
+.date-Tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  color: #ffbc0e;
+  font-weight: 600;
+  margin: 5% 10%;
+  font-family: var(--sen);
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.s1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.s11 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.s22 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.s33 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.s44 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.s55 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+.s66 {
+  grid-area: 2 / 5 / 3 / 6;
+}
+.s2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.s3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.s4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.s5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.s6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+/*End Tour Style*/
+
+/*Video Style CSS*/
+.container-slider {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider {
+  display: flex;
+  width: 500%;
+  height: 400px;
+}
+.slider__section {
+  width: -75%;
+}
+
+.slide__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.slider__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__btn:hover {
+  background-color: white;
+}
+.slider__btn--left {
+  left: 10px;
+}
+.slider__btn--right {
+  right: 10px;
+}
+
+/*Video Style End*/
+
+/*Store Style CSS*/
+.galery-store {
+  display: flex;
+  margin: 0 15%;
+}
+
+.store__card{
+  padding: 20px;
+}
+.galery-store img {
+  height: 300px;
+}
+
+.bs{
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+}
+
+/*Store style end*/
 
 /*Suscribe css style*/
 .suscribe {

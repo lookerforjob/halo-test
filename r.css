@@ -150,7 +150,7 @@
     font-weight: 400;
     letter-spacing: 0.3rem;
   }
-  
+
   .hero__title {
     font-size: 2rem;
     font-family: var(--sen);
@@ -159,13 +159,30 @@
     font-weight: 800;
   }
 
+  /*Tour style 375px*/
+  .date-Tour {
+    display: block;
+    color: wheat;
+    font-size: 10px;
+  }
+  /*End tour style*/
+
+  .galery-store {
+    display: block;
+    margin: 0 auto  ;
+  }
+
+  .galery-store img {
+    height: 200px;
+  }
+
   footer {
     height: auto;
     text-align: center;
     line-height: 2rem;
   }
 
-  footer ul{
+  footer ul {
     padding: 0;
   }
 }
