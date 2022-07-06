@@ -1,5 +1,22 @@
+@media (max-width: 1200px) {
+  /*Store Style 1200px*/
+
+  .galery-store img {
+    height: 200px;
+  }
+
+  .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
+}
+
+/*End Store Style 1200px*/
+
 /*Nav responsive*/
 @media (max-width: 900px) {
+  .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
   /*nav responsive*/
   #btn-mobile {
     display: block;
@@ -76,6 +93,18 @@
     display: inline-block;
     padding: 5px;
   }
+
+  /*Store Style 900px*/
+
+  .galery-store img {
+    height: 150px;
+  }
+
+  /*End Store Style 900px*/
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /*Releases responsive*/
@@ -114,6 +143,48 @@
     margin-left: 0;
   }
 
+  /*Tour style 750px*/
+  .date-Tour {
+    display: block;
+    font-size: 15px;
+  }
+  /*End tour style*/
+
+  /*Store Style 1200px*/
+
+  .title-wf .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
+
+  .galery-store {
+    display: block;
+  }
+
+  .galery-store h3 {
+    display: block;
+    font-size: 1 em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .galery-store img {
+    height: 250px;
+  }
+
+  div .store__card{
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*End Store Style 1200px*/
+
+  /*Start Photo CSS*/
+
+  /*End Photo CSS*/
+
   footer {
     height: auto;
     text-align: center;
@@ -122,6 +193,9 @@
 }
 
 @media screen and (max-width: 375px) {
+  .bs {
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
+  }
   .releases__grid {
     --num-cols: 2;
     margin-left: 5%;
@@ -162,19 +236,21 @@
   /*Tour style 375px*/
   .date-Tour {
     display: block;
-    color: wheat;
     font-size: 10px;
   }
   /*End tour style*/
 
+  /*Store Style 375px*/
   .galery-store {
     display: block;
-    margin: 0 auto  ;
+    margin: 0 auto;
   }
 
   .galery-store img {
     height: 200px;
   }
+
+  /*End Store Style 375px*/
 
   footer {
     height: auto;

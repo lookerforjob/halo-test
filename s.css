@@ -254,7 +254,7 @@ hero .title {
 }
 
 .releases__grid {
-  --gap: 16px;
+  --gap: 5px;
   --num-cols: 4;
   --row-height: minmax(40px, 1fr);
   margin-left: 15%;
@@ -291,12 +291,37 @@ hero .title {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  color: #ffbc0e;
   font-weight: 600;
   margin: 5% 10%;
   font-family: var(--sen);
 }
 
+.s44,
+.s55,
+.s66 {
+  color: #ffbc0e;
+  font-size: 2.8vh;
+  font-family: var(--sen);
+}
+
+.s11 {
+  font-family: var(--sedwick);
+  color: #fff;
+}
+
+.s22 {
+  font-family: var(--sen);
+  font-size: 3vh;
+  font-weight: 800;
+  color: #fff;
+}
+
+.s33 {
+  font-family: var(--sen);
+  font-size: 2.5vh;
+  font-weight: 400;
+  color: #fff;
+}
 .s1,
 .s2,
 .s3,
@@ -359,18 +384,19 @@ hero .title {
 }
 .slider {
   display: flex;
-  width: 500%;
+  width: 400%;
   height: 400px;
 }
 .slider__section {
-  width: -75%;
+  width: 100%;
+  padding-right: 20px;
 }
 
 .slide__img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .slider__btn {
   position: absolute;
@@ -403,23 +429,85 @@ hero .title {
   margin: 0 15%;
 }
 
-.store__card{
+.store__card {
   padding: 20px;
 }
 .galery-store img {
   height: 300px;
 }
 
-.bs{
+.bs {
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
 }
 
+.title-store {
+  font-family: var(--sen);
+  font-weight: 800;
+}
+
+.subtitle-store {
+  font-family: var(--sedwick);
+}
 /*Store style end*/
 
-/*Suscribe css style*/
-.suscribe {
+/*Start Photo CSS*/
+
+.photos {
+  height: auto;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 10%;
+}
+
+.photo__img {
+  width: 100%;
+}
+
+/*End Photo CSS*/
+
+/*Subscribe css style*/
+.subscribe {
   color: white;
   padding-bottom: 1rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.underline {
+  border-bottom: 2px solid #fdf508;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+input {
+  border-style: none;
+  color: #000000;
+}
+::placeholder {
+  color: #fdf508;
+}
+
+select {
+  color: #fdf508;
+  border: none;
+  border-bottom: 2px solid #fdf508;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.title-wf__subscribe {
+  font-size: 3.7rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.493);
+  color: rgba(0, 0, 0, 0);
+  font-family: var(--sen);
+  padding-top: 1.5rem;
+  letter-spacing: 25px;
 }
 /*Footer css style*/
 footer {
