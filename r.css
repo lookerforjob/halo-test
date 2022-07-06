@@ -1,4 +1,23 @@
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
+  /*Start 1024px style Hero*/
+  hero {
+    background-position: 450px 10px;
+  }
+
+  .social-menu {
+    margin-top: 15rem;
+    margin-left: 13rem;
+  }
+
+  .arrow {
+    margin-top: 8rem;
+    margin-left: 12rem;
+  }
+
+  .arrow a:first-of-type {
+    padding-right: 30px;
+  }
+  /*End 1024px style Hero*/
   /*Store Style 1200px*/
 
   .galery-store img {
@@ -14,6 +33,27 @@
 
 /*Nav responsive*/
 @media (max-width: 900px) {
+  /*Start 900px style Hero*/
+  hero {
+    background-position: 450px 10px;
+  }
+
+  .social-menu {
+    margin-top: 1rem;
+    margin-left: 9rem;
+  }
+
+  .social-menu a {
+    font-size: 1.3rem;
+  }
+  .arrow {
+    margin: 2rem 0 0 8.3rem;
+  }
+  .arrow a:first-of-type {
+    padding-right: 25px;
+  }
+
+  /*End 900px style Hero*/
   .bs {
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
   }

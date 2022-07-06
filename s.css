@@ -184,7 +184,7 @@ nav ul a:hover {
 /*hero seccion CSS*/
 hero {
   display: grid;
-  grid-template-columns: (2, 1fr);
+  grid-template-columns: 70% 30%;
   background: #f7c528;
   background-image: url(hero\ bg.webp);
   background-repeat: no-repeat;
@@ -192,9 +192,7 @@ hero {
 }
 
 hero .title {
-  grid-column: 1;
-  margin-top: 22rem;
-  margin-left: 7rem;
+  margin: 22rem 0 5rem 7rem;
 }
 
 .hero__subtitle {
@@ -214,8 +212,8 @@ hero .title {
 }
 
 .social-menu {
-  position: sticky;
-  grid-column: 2;
+  margin-top: 10rem;
+  margin-left: 20rem;
 }
 
 .social-menu a {
@@ -230,19 +228,24 @@ hero .title {
 .social-menu ul li {
   list-style: none;
   text-decoration: none;
-  transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;;
 }
 
 .social-menu ul li:hover {
   transform: scale(1.03);
 }
-
+.arrow{
+  margin-top: 12rem;
+  margin-left: 16rem;
+}
+.arrow a:first-of-type {
+  padding-right: 80px;
+}
 .arrow a {
   display: inline;
   color: #000;
   position: relative;
-  font-size: 2.5rem;
-  padding-right: 80px;
+  font-size: 2.5rem;  
 }
 
 /*End Hero style*/
