@@ -18,6 +18,14 @@
     padding-right: 30px;
   }
   /*End 1024px style Hero*/
+
+  /*Tour style 750px*/
+  .date-Tour {
+    display: block;
+    font-size: 15px;
+  }
+  /*End tour style*/
+
   /*Store Style 1200px*/
 
   .galery-store img {
@@ -29,9 +37,6 @@
   }
 }
 
-/*End Store Style 1200px*/
-
-/*Nav responsive*/
 @media (max-width: 900px) {
   /*Start 900px style Hero*/
   hero {
@@ -147,8 +152,7 @@
   }
 }
 
-/*Releases responsive*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   .releases__grid {
     --num-cols: 2;
     margin-left: 5%;
@@ -190,7 +194,7 @@
   }
   /*End tour style*/
 
-  /*Store Style 1200px*/
+  /*Store Style 700px*/
 
   .title-wf .bs {
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.493);
@@ -219,7 +223,7 @@
     align-items: center;
   }
 
-  /*End Store Style 1200px*/
+  /*End Store Style 700px*/
 
   /*Start Photo CSS*/
 
@@ -241,6 +245,28 @@
     height: auto;
     text-align: center;
     line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  hero {
+    display: block;
+    padding: auto;
+  }
+
+  hero .title {
+    padding: 0;
+    margin: 1rem;
+  }
+  .social-menu {
+    margin: 0;
+  }
+  .social-menu > ul {
+    padding-left: 1rem;
+  }
+
+  .arrow {
+    margin-left: 1rem;
   }
 }
 
@@ -286,10 +312,57 @@
   }
 
   /*Tour style 375px*/
-  .date-Tour {
-    display: block;
-    font-size: 10px;
-  }
+  .date-Tour s1, .date-Tour s2, .date-Tour s3, .date-Tour s4, .date-Tour s5, .date-Tour s6{
+          display: grid;
+          width: 100%;
+          height: 100%;
+          grid-template-areas: "s11 s33 s33"
+                               "s22 s22 s22"
+                               "s44 s55 s66";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        }
+
+        .s11{
+          grid-area: s11;
+          font-size: 20px;
+          margin-left: 20%;
+        }
+
+        .s22{
+          grid-area: s22;
+          font-size: 30px;
+          margin-left: 5%;
+        }
+
+        .s33{
+          grid-area: s33;
+          font-size: 20px;
+          margin-left: 5%;
+        
+        }
+
+        .s44{
+          grid-area: s44;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+        }
+
+        .s55{
+          grid-area: s55;        
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+        }
+
+        .s66{
+          grid-area: s66;        
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+        }
   /*End tour style*/
 
   /*Store Style 375px*/

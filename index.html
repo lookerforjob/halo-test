@@ -118,7 +118,7 @@
         <s1 class="s1">
           <h4 class="s11 c">Jun 6</h4>
           <h3 class="s22 c">Jewel nightclub</h3>
-          <h4 class="s33 c">las vegas, nv</h4>
+          <h4 class="s33 c">las vegas, nv</h4>          
       
           <h4 class="s44 c">tikets</h4>
           <h4 class="s55 c">VIP</h4>
@@ -206,8 +206,8 @@
                 <h3>title1</h3>
             <h4>subtitle1</h4>
               </div>
-              <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
-              <div class="slider__btn slider__btn--right" id="btn-right">&#62</div>
+              <div class="slider__btn slider__btn--left" id="btn-left"><i class="fa-solid fa-caret-left"></i></div>
+              <div class="slider__btn slider__btn--right" id="btn-right"><i class="fa-solid fa-caret-right"></i></div>
             </div>
           </div>
         <div id="left"><a href="#"><button class="btn--y left">View all videos</button></a></div>
@@ -280,8 +280,7 @@
     <suscribe  id="subscribe">
       <div class="grey subscribe">
         <h2 class="title-wf__subscribe grey" id="suscribe">Subscribe</h2>
-        <body>
-          <form action="">
+          <form class="subscribe__form"action="">
               <div class="inline-form ">
                   <input class="subscribe__input underline" type="email" placeholder="Email address">
               
@@ -297,15 +296,18 @@
               
               <div>
                   <h4 class="title-suscribe">Subscribe to emails from:</h4>
-                  <input class="checkbox" type="checkbox" name="murda-beatz" id="murda-beatz">Murd Beatz
+                  <div class="ckbox">
+                    <input class="checkbox" type="checkbox" name="murda-beatz" id="murda-beatz">Murd Beatz
                   <input class="checkbox" type="checkbox" name="interscope-records" id="interscope-records">Interscope Records
                   <input class="checkbox" type="checkbox" name="universal-music-group" id="universal-music-group">Universal Music Group
+                  </div>
+                  
                   
               </div>
               
       
               <div>
-                  <h5 class="subscribe__input">By submitting this form, you agree to the <a href="#">Universal Music Group privacy policy.</a></h5>
+                  <h5 class="subscribe__input">By submitting this form, you agree to the <a href="#" class="subscribe__input">Universal Music Group privacy policy.</a></h5>
                   <input type="button" placeholder="Submit" class="btn--y" value="Submit">
               </div>
           </form>
